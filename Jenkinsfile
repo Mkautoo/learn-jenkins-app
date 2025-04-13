@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        NETLIFY_SITE_ID = 'PUT YOUR NETLIFY SITE ID HERE'
+        NETLIFY_SITE_ID = '519c122e-9c22-46e8-964c-f9ece80f0f5e'
         NETLIFY_AUTH_TOKEN = credentials('Netlify-token')
     }
 
@@ -103,7 +103,7 @@ pipeline {
             }
 
             environment {
-                CI_ENVIRONMENT_URL = 'PUT YOUR NETLIFY SITE URL HERE'
+                CI_ENVIRONMENT_URL = 'https://celadon-liger-a31fe3.netlify.app'
             }
 
             steps {
